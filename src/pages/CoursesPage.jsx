@@ -1,6 +1,18 @@
-// pages/CoursesPage.jsx
+import courses from "../data/courses"
+import CourseCard from "../components/course/CourseCard"
+
 function CoursesPage() {
-  return <h1>Courses Page</h1>
+  return (
+    <div>
+      <h1>Explore Courses</h1>
+
+      <div>
+        {courses.map((course) => (
+          <CourseCard key={course.id} course={course} />
+        ))}
+      </div>
+    </div>
+  )
 }
 
 export default CoursesPage

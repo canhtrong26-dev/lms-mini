@@ -1,0 +1,43 @@
+const courses = [{
+        id: 1,
+        title: "Complete React Developer Course 2024",
+        description: "Master React.js from scratch with hands-on projects.",
+        category: "frontend",
+        level: "Beginner",
+        lessons: 42,
+        instructor: "Sarah Wilson",
+        price: 89,
+    },
+    {
+        id: 2,
+        title: "Advanced Node.js & Microservices",
+        description: "Build scalable backend systems with Node.js and Kubernetes.",
+        category: "backend",
+        level: "Advanced",
+        lessons: 35,
+        instructor: "Mike Chen",
+        price: 99,
+    },
+    {
+        id: 3,
+        title: "UI/UX Design Masterclass",
+        description: "Design beautiful interfaces and user experiences.",
+        category: "design",
+        level: "Intermediate",
+        lessons: 28,
+        instructor: "Jessica Lee",
+        price: 79,
+    },
+    {
+        id: 4,
+        title: "DevOps Zero to Hero",
+        description: "Master CI/CD, Docker, Kubernetes, and AWS.",
+        category: "devops",
+        level: "Intermediate",
+        lessons: 50,
+        instructor: "David Miller",
+        price: 129,
+    },
+]
+
+export default courses
