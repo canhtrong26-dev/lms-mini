@@ -74,7 +74,7 @@ Email: any@email.com
 Password: 123456 (tối thiểu 6 ký tự)
 
 ## 🌐 Demo
-[Link demo sau khi deploy lên Vercel]
+Link: https://lms-mini-rho.vercel.app/
 
 ## 👨‍💻 Tác giả
 Võ Trọng Cảnh
