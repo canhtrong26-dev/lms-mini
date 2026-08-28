@@ -40,4 +40,6 @@ const courses = [{
     },
 ]
 
+export const myCourseIds = [1, 2, 3, 4]
+
 export default courses
