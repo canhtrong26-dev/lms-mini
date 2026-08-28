@@ -6,8 +6,6 @@ function AuthProvider({ children }) {
   const [isLoggedIn, setIsLoggedIn] = useState(false)
   const [user, setUser] = useState(null)
 
-
-
   const login = (email) => {
     setIsLoggedIn(true)
     setUser({ name: "you", email: email })
@@ -23,10 +21,6 @@ function AuthProvider({ children }) {
       {children}
     </AuthContext.Provider>
   )
-}
-
-function useAuth() {
-  return useContext(AuthContext)
 }
 
 function useAuth() {
