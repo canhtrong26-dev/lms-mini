@@ -12,6 +12,8 @@ import DashboardPage from "./pages/DashboardPage"
 import MyCoursesPage from "./pages/MyCoursesPage"
 import NotFoundPage from "./pages/NotFoundPage"
 
+import PrivateRoute from "./components/PrivateRoute"
+
 function App() {
   return (
     <BrowserRouter>
@@ -26,8 +28,16 @@ function App() {
         </Route>
 
         <Route element={<DashboardLayout />}>
-          <Route path="/dashboard" element={<DashboardPage />} />
-          <Route path="/dashboard/my-courses" element={<MyCoursesPage />} />
+          <Route path="/dashboard" element={
+            <PrivateRoute>
+              <DashboardPage />
+            </PrivateRoute>
+          } />
+          <Route path="/dashboard/my-courses" element={
+            <PrivateRoute>
+              <MyCoursesPage />
+            </PrivateRoute>
+          } />
         </Route>
 
         <Route path="*" element={<NotFoundPage />} />
